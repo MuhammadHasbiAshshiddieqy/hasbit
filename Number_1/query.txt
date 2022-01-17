@@ -1,0 +1,7 @@
+# For Testing : https://www.db-fiddle.com/
+
+# Check Table
+SELECT * FROM users;
+
+# Answer
+SELECT u.ID, u.UserName, t.UserName ParentUserName FROM users u LEFT JOIN users t ON u.Parent = t.ID ORDER BY u.ID; 

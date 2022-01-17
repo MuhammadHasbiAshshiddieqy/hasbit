@@ -1,0 +1,8 @@
+CREATE TABLE users (
+  ID INT PRIMARY KEY,
+  UserName VARCHAR(30),
+  Parent INT
+);
+INSERT INTO users (ID, UserName, Parent) VALUES (1, "Ali", 2);
+INSERT INTO users (ID, UserName, Parent) VALUES (2, "Budi", 0);
+INSERT INTO users (ID, UserName, Parent) VALUES (3, "Cecep", 1);
